@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="az">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Link Buttons</title>
+  <style>
+    :root{
+      --bg:#0f1720;
+      --card:#0b1220;
+      --accent-1:#1e88e5;
+      --accent-2:#ff5a5f;
+      --glass: rgba(255,255,255,0.03);
+      --muted: rgba(255,255,255,0.65);
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:
+        radial-gradient(1200px 600px at 10% 10%, rgba(30,136,229,0.06), transparent 8%),
+        radial-gradient(900px 500px at 90% 90%, rgba(255,90,95,0.04), transparent 8%),
+        var(--bg);
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+    }
+
+    .wrap{width:100%;max-width:760px}
+    .header{display:flex;align-items:center;gap:14px;margin-top:100px;margin-bottom:18px}
+    h1{margin:0;font-size:18px;letter-spacing:0.2px;color:#fff}
+    p.sub{margin:2px 0 0;color:var(--muted);font-size:13px}
+
+    .card{
+      background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));
+      border-radius:14px;
+      padding:18px;
+      box-shadow:0 10px 30px rgba(2,6,23,0.6);
+      border:1px solid rgba(255,255,255,0.03);
+    }
+
+    .list{display:flex;flex-direction:column;gap:12px;margin-top:6px}
+
+    .btn{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      text-decoration:none;
+      padding:14px 16px;
+      border-radius:12px;
+      background:linear-gradient(90deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.03);
+      transition:transform .15s ease,box-shadow .15s ease,background .15s ease;
+      cursor:pointer;
+      color:#fff;
+      min-height:56px;
+    }
+    .btn:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(2,6,23,0.6);background:linear-gradient(90deg,rgba(30,136,229,0.06),rgba(124,77,255,0.03))}
+    .btn:active{transform:translateY(-1px)}
+
+    .icon-wrap{
+      width:44px;height:44px;border-radius:10px;
+      display:flex;align-items:center;justify-content:center;
+      background:var(--glass);
+      flex-shrink:0;
+      border:1px solid rgba(255,255,255,0.02);
+    }
+    .meta{flex:1;display:flex;flex-direction:column;gap:4px}
+    .title{font-size:15px;font-weight:600}
+    .url{font-size:12px;color:var(--muted);word-break:break-all}
+    .badge{
+      font-size:12px;
+      padding:6px 8px;
+      background:linear-gradient(90deg,var(--accent-1),#7c4dff);
+      color:#fff;
+      border-radius:999px;
+      font-weight:600;
+      align-self:flex-start;
+      box-shadow:0 6px 16px rgba(30,136,229,0.12);
+    }
+    @media(max-width:460px){.icon-wrap{width:40px;height:40px}.btn{padding:12px}.title{font-size:14px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <h1>Tamerlan Soltanbeyli</h1>
+    </div>
+
+    <div class="card" role="region" aria-label="Links">
+      <div class="list">
+
+        <!-- Instagram: sehidsoltanbeyli -->
+        <a class="btn" href="https://www.instagram.com/sehidsoltanbeyli?igsh=MWduZWZ2MHg5NHJjcw==" target="_blank" rel="noopener noreferrer">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="url(#g1)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f58529"/><stop offset="0.5" stop-color="#dd2a7b"/><stop offset="1" stop-color="#8134af"/></linearGradient></defs>
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><path d="M17.5 6.5h.01"></path>
+            </svg>
+          </div>
+          <div class="meta"><div class="title">Instagram - sehidsoltanbeyli</div><div class="url">instagram.com/sehidsoltanbeyli</div></div>
+          <div class="badge">Instagram</div>
+        </a>
+
+        <!-- TikTok: _herbici_25 -->
+        <a class="btn" href="https://www.tiktok.com/@_herbici_25?_t=ZS-8zq2UJXWq0I&_r=1" target="_blank" rel="noopener noreferrer">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 4.5v7.5a3.5 3.5 0 1 1-3.5-3.5V5"></path><path d="M9 18.5a4.5 4.5 0 1 1 4.5-4.5V20.5"></path>
+            </svg>
+          </div>
+          <div class="meta"><div class="title">TikTok - @_herbici_25</div><div class="url">tiktok.com/@_herbici_25</div></div>
+          <div class="badge">TikTok</div>
+        </a>
+
+        <!-- TikTok: soltanbeyli -->
+        <a class="btn" href="https://www.tiktok.com/@soltanbeyli?_t=ZS-8zq2RvEhBua&_r=1" target="_blank" rel="noopener noreferrer">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 4.5v7.5a3.5 3.5 0 1 1-3.5-3.5V5"></path><path d="M9 18.5a4.5 4.5 0 1 1 4.5-4.5V20.5"></path>
+            </svg>
+          </div>
+          <div class="meta"><div class="title">TikTok - @soltanbeyli</div><div class="url">tiktok.com/@soltanbeyli</div></div>
+          <div class="badge">TikTok</div>
+        </a>
+
+        <!-- TikTok: soltanbeyli.tamerlan -->
+        <a class="btn" href="https://www.tiktok.com/@soltanbeyli.tamerlan?_t=ZS-8zq2POWAT2d&_r=1" target="_blank" rel="noopener noreferrer">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 4.5v7.5a3.5 3.5 0 1 1-3.5-3.5V5"></path><path d="M9 18.5a4.5 4.5 0 1 1 4.5-4.5V20.5"></path>
+            </svg>
+          </div>
+          <div class="meta"><div class="title">TikTok - @soltanbeyli.tamerlan</div><div class="url">tiktok.com/@soltanbeyli.tamerlan</div></div>
+          <div class="badge">TikTok</div>
+        </a>
+
+        <!-- TikTok: sehid_soltanbeyli_t -->
+        <a class="btn" href="https://www.tiktok.com/@sehid_soltanbeyli_t?_t=ZS-8zq2OnHaQaY&_r=1" target="_blank" rel="noopener noreferrer">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 4.5v7.5a3.5 3.5 0 1 1-3.5-3.5V5"></path><path d="M9 18.5a4.5 4.5 0 1 1 4.5-4.5V20.5"></path>
+            </svg>
+          </div>
+          <div class="meta"><div class="title">TikTok - @sehid_soltanbeyli_t</div><div class="url">tiktok.com/@sehid_soltanbeyli_t</div></div>
+          <div class="badge">TikTok</div>
+        </a>
+
+        <!-- TikTok: soltanbeylitamerlan -->
+        <a class="btn" href="https://www.tiktok.com/@soltanbeylitamerlan?_t=ZS-8zq2NpSkbNn&_r=1" target="_blank" rel="noopener noreferrer">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 4.5v7.5a3.5 3.5 0 1 1-3.5-3.5V5"></path><path d="M9 18.5a4.5 4.5 0 1 1 4.5-4.5V20.5"></path>
+            </svg>
+          </div>
+          <div class="meta"><div class="title">TikTok - @soltanbeylitamerlan</div><div class="url">tiktok.com/@soltanbeylitamerlan</div></div>
+          <div class="badge">TikTok</div>
+        </a>
+
+        <!-- Instagram: tamerlansoltanbeyli -->
+        <a class="btn" href="https://www.instagram.com/tamerlansoltanbeyli?igsh=b2c5MWVzajltaWFu" target="_blank" rel="noopener noreferrer">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="url(#g1)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><path d="M17.5 6.5h.01"></path>
+            </svg>
+          </div>
+          <div class="meta"><div class="title">Instagram - tamerlansoltanbeyli</div><div class="url">instagram.com/tamerlansoltanbeyli</div></div>
+          <div class="badge">Instagram</div>
+        </a>
+
+        <!-- Instagram: soltanbeylitamerlan -->
+        <a class="btn" href="https://www.instagram.com/soltanbeylitamerlan?igsh=MTQ1ZzB4MWY0djgyeQ==" target="_blank" rel="noopener noreferrer">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="url(#g1)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><path d="M17.5 6.5h.01"></path>
+            </svg>
+          </div>
+          <div class="meta"><div class="title">Instagram - soltanbeylitamerlan</div><div class="url">instagram.com/soltanbeylitamerlan</div></div>
+          <div class="badge">Instagram</div>
+        </a>
+
+        <!-- Instagram: sehid_soltanbeyli_tamerlan -->
+        <a class="btn" href="https://www.instagram.com/sehid_soltanbeyli_tamerlan?igsh=bThwc2JzazFidWRj" target="_blank" rel="noopener noreferrer">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="url(#g1)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><path d="M17.5 6.5h.01"></path>
+            </svg>
+          </div>
+          <div class="meta"><div class="title">Instagram - sehid_soltanbeyli_tamerlan</div><div class="url">instagram.com/sehid_soltanbeyli_tamerlan</div></div>
+          <div class="badge">Instagram</div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
